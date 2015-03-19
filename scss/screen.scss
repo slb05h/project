@@ -1,0 +1,45 @@
+/* ==========================================================================
+  Imports
+/* ========================================================================== */
+@import 'compass';
+
+
+/* Pages */
+@import "_pages/_500.scss";
+@import "_pages/_404.scss";
+
+/* Variables */
+@import "_variables/all";
+
+@import "normalize";
+@import "print";
+@import "ie";
+
+/* pages */
+@import "_pages/_500.scss";
+@import "_pages/_404.scss";
+
+
+
+
+html{
+
+  font-family: 'proxima-nova', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: $bgwhite;
+  transform: translateZ(0);
+  transition-duration: 0.4s;
+  body{
+    bottom: 0;
+    color: $darkgray1;
+  }
+  section{
+    padding: 22em;
+    p{
+      font-size: 1.5em;
+   
+    }
+  }
+}

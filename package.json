@@ -1,0 +1,30 @@
+{
+  "name": "PRIME",
+  "version": "0.0.1",
+  "description": "Template for PRIME",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "PRIME"
+  ],
+  "author": "Dialexa",
+  "license": "BSD",
+  "devDependencies": {
+    "bower": "~0.8.6",
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "^1.0.1",
+    "grunt-bower-install": "~0.8.0",
+    "grunt-bower-requirejs": "~0.4.1",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-imagemin": "~0.6.1",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-exec": "^0.4.6",
+    "grunt-newer": "~0.6.1",
+    "grunt-svgmin": "~0.1.0",
+    "load-grunt-tasks": "~1.0.0",
+    "time-grunt": "~1.0.0"
+  }
+}

@@ -1,0 +1,89 @@
+@import "_variables/all";
+
+
+* {
+   
+    margin: 0;
+    color: $bgwhite;
+    font-weight: 300;
+}
+
+html {
+   
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background-color: $blue;
+    .backstretch:before {
+    	  background-color: rgba(72, 139, 155, .0);
+    }
+    body {
+    	display: table-cell;
+    	padding-top: 2em; 
+	    
+		 }
+		h1 {
+        color: $bgwhite;
+        font-size: 5em;
+
+        margin: 10px auto;
+    }
+
+    p {
+    	font-size: 1.5em;
+        margin: 0 auto;
+        width: 40%;
+        line-height: 1.25em;
+    }
+    a {
+    	font-size: 1.25em;
+    	font-weight: 400;
+    }
+    .btn:hover {
+    	background-color: $blue;
+    	border-color: $blue;
+    }
+    
+    .btn {
+    	display: inline-block;
+    	box-szing: border-box;     
+    	padding: .65em .9em;
+    	border-radius: .2em;
+    	border: $bgwhite solid 2px;
+    	background-color: none;
+    	margin-top: 1em;
+    }
+
+}
+
+.compass:hover {
+ -webkit-animation: cspin 3.5s ease-in-out  infinite;
+}
+.compass {
+	padding: 0 .15em;
+  -webkit-animation: spin 3.5s ease-in-out  infinite;
+}
+
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+ }
+@-webkit-keyframes cspin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(-360deg); }
+ }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }

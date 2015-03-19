@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Placeholdem // Placeholder Caret Animation</title>
+		<meta name="description" content="Placeholdem is a JavaScript plugin that animates placeholder carets on inputs and textareas. The placeholder value will incrementally delete on focus, and restore on blur.">
+		<link href="assets/css/style.min.css" rel="stylesheet">
+		<link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	</head>
+	<body>
+		<div class="container">
+			<!--<script type="text/javascript" src="http://cdn.adpacks.com/adpacks.js?legacyid=1277915&zoneid=1386&key=37b1de7c92bae5639db42acabda6975a&serve=C6SI42Y&placement=jackrugilecom&circle=dev" id="_adpacks_js"></script>-->
+			<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=jackrugilecom" id="_carbonads_js"></script>
+			<header>
+				<h1 class="fade">Placeholdem</h1>
+				<h2 class="fade">Placeholder Caret Animation</h2>
+				<p class="fade">Placeholdem is a JavaScript plugin that animates placeholder carets on inputs and textareas. The placeholder value will incrementally delete on focus, and restore on blur.</p>
+			</header>
+			<h3 class="fade">Try It</h3>
+			<form>
+				<label class="fade">
+					<input name="field1" placeholder="Triggered on Focus/Blur" />
+					<div class="arrow"></div>
+				</label>
+				<label class="fade">
+					<textarea name="field2" placeholder="Inputs or Textareas"></textarea>
+					<div class="arrow"></div>
+				</label>
+			</form>
+			<h3 class="fade">Get It</h3>
+			<div class="buttons fade clearfix">
+				<a href="placeholdem.min.js" class="button">placeholdem.min.js</a>
+				<a href="https://github.com/jackrugile/placeholdem" class="button">GitHub Repository</a>
+			</div>
+			<h3 class="fade">Use It</h3>
+			<div class="code-wrap">
+				<pre class="fade"><code><span>&lt;!-- add placeholder to input or textarea --/&gt;</span>
+&lt;input name="fieldname" placeholder="Placeholder Value" /&gt;</code></pre>
+				<pre class="fade"><code><span>// run Placeholdem on all elements with placeholders</span>
+Placeholdem( document.querySelectorAll( '[placeholder]' ) );
+</code></pre>
+			</div>
+		<footer class="fade">
+			<p>By <a href="http://jackrugile.com" title="Jack Rugile">Jack Rugile</a></p>
+		</footer>
+		</div>
+		<script src="placeholdem.min.js"></script>
+		<script>
+			Placeholdem( document.querySelectorAll( '[placeholder]' ) );
+
+			var fadeElems = document.body.querySelectorAll( '.fade' ),
+				fadeElemsLength = fadeElems.length,
+				i = 0,
+				interval = 50;
+
+				function incFade() {
+					if( i < fadeElemsLength ) {
+						fadeElems[ i ].className += ' fade-load';
+						i++;
+						setTimeout( incFade, interval );
+					}
+				}
+
+				setTimeout( incFade, interval );
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-5693606-7', 'jackrugile.com');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

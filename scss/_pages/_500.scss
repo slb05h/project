@@ -1,0 +1,38 @@
+@import "_variables/all";
+
+* {
+   
+    margin: 0;
+    color: $bgwhite;
+    font-weight: 300;
+}
+
+html {
+   
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    .backstretch:before {
+    	  background-color: rgba(72, 139, 155, .0);
+    }
+   
+}
+ body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
+        h1 {
+        color: $bgwhite;
+        font-size: 5em;
+
+     
+    }
+
+    p {
+        font-size: 1.5em;
+        margin: 0 auto;
+        width: 40%;
+        line-height: 1.25em;
+    }
